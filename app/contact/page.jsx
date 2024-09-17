@@ -16,7 +16,7 @@ const info = [
   {
     icon : <FaEnvelope />,
     title: 'Email',
-    description: 'calebluvuvamu@gmail.com'
+    description: 'ljcdev421@gmail.com'
   },
   {
     icon : <FaMapMarkerAlt />,
@@ -39,8 +39,8 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10  bg-[#27272c] rounded-xl ">
               <h3 className="text-4xl text-accent">Travaillons ensemble</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptas odit numquam expedita aliquid molestiae debit.
+              Si vous avez des besoins dans ces domaines ou des projets sur lesquels nous pourrions travailler ensemble, je serais ravi d'en discuter plus en détail.
+              N’hésitez pas à me contacter pour plus d’informations ou pour fixer un rendez-vous.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Nom" />

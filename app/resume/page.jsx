@@ -21,20 +21,12 @@ const about = {
       fieldValue:"Béninoise",
     },
     {
-      fieldName:"Situation matrimoniale",
-      fieldValue:"Célibataire",
-    },
-    {
       fieldName:"Email",
-      fieldValue:"calebluvuvamu@gmail.com",
+      fieldValue:"ljcdev421@gmail.com",
     },
     {
       fieldName:"Langues",
       fieldValue:"Français, Anglais",
-    },
-    {
-      fieldName:"Hobbies",
-      fieldValue:"Jeux vidéos, Musique, Randonnée",
     },
   ]
 }
@@ -184,7 +176,7 @@ const Resume = () => {
           </TabsList>
 
           {/* content */}
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[70vh] w-full mb-5">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -269,8 +261,8 @@ const Resume = () => {
                 <ul>
                   {about.info.map((item, index)=>{ 
                     return <li key={index} className="flex justify-center items-center gap-4 xl:justify-start">
-                      <span className="text-white/60 text-lg font-bold"> {item.fieldName} :</span>
-                      <span className="text-lg"> {item.fieldValue} </span>
+                      <span className="text-white/60 text-lg font-bold mb-5"> {item.fieldName}: </span>
+                      <span className="text-lg mb-5"> {item.fieldValue} </span>
                     </li>
                   })}
                 </ul>
