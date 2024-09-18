@@ -36,13 +36,13 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10  bg-[#27272c] rounded-xl ">
+            <form className="flex flex-col gap-6 p-10  bg-[#27272c] rounded-xl py-20">
               <h3 className="text-4xl text-accent">Travaillons ensemble</h3>
               <p className="text-white/60">
               Si vous avez des besoins dans ces domaines ou des projets sur lesquels nous pourrions travailler ensemble, je serais ravi d'en discuter plus en détail.
               N’hésitez pas à me contacter pour plus d’informations ou pour fixer un rendez-vous.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid-cols-1 md:grid-cols-2 gap-6 hidden">
                 <Input type="firstname" placeholder="Nom" />
                 <Input type="lastname" placeholder="Prénom" />
                 <Input type="email" placeholder="Email" />
@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
 
               <Select>
-                <SelectTrigger>
+                <SelectTrigger className="hidden">
                   <SelectValue placeholder="Choisir un service"/>
                 </SelectTrigger>
                 <SelectContent>
@@ -64,9 +64,9 @@ const Contact = () => {
                 </SelectContent>
               </Select>
 
-              <Textarea className="h-[200px]" placeholder="Entrez votre message." />
+              <Textarea className="h-[200px] hidden" placeholder="Entrez votre message." />
 
-              <Button size="md" className="max-w-40"> Envoyer </Button>
+              <Button size="md" className="max-w-40 hidden"> Envoyer </Button>
             </form>
           </div>
           {/* info */}
