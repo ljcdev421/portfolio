@@ -15,50 +15,62 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Web Cat",
+    description: "Une page web illustrant un chat, juste pour travailler le CSS.",
     stack:[
-      {name: "html 5"}, {name: "css 3"}, {name: "javascript"}
+      {name: "html 5"}, {name: "css 3"}
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/cat.png",
+    live: "https://web-cat-delta.vercel.app/",
+    github: "https://github.com/ljcdev421/web-cat",
   },
   {
     num: "02",
     category: "frontend",
-    title: "project 1",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Web Penguin",
+    description: "Une page web illustrant un pingouin qui fait un coucou.",
     stack:[
-      {name: "html 5"}, {name: "css 3"}, {name: "javascript"}
+      {name: "html 5"}, {name: "css 3"}
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/penguin.png",
+    live: "https://web-penguin.vercel.app/",
+    github: "https://github.com/ljcdev421/web-penguin",
   },
   {
     num: "03",
     category: "frontend",
-    title: "project 1",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "Web Piano",
+    description: "Une page web illustrant un piano, pour travailler les notions de style.",
     stack:[
-      {name: "html 5"}, {name: "css 3"}, {name: "javascript"}
+      {name: "html 5"}, {name: "css 3"}
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/piano.png",
+    live: "https://web-piano-nu.vercel.app/",
+    github: "https://github.com/ljcdev421/web-piano",
   },
   {
     num: "04",
     category: "frontend",
-    title: "project 1",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "City Skyline",
+    description: "Une ville en journée et en nuit, sous l'éclat du soleil et celui de la lune.",
     stack:[
-      {name: "html 5"}, {name: "css 3"}, {name: "javascript"}
+      {name: "html 5"}, {name: "css 3"}
     ],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    image: "/assets/work/city.png",
+    live: "https://city-skyline-ecru.vercel.app/",
+    github: "https://github.com/ljcdev421/city-skyline",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "Balance sheet",
+    description: "Une page web présentant un bilan d'actifs et de responsabilités.",
+    stack:[
+      {name: "html 5"}, {name: "css 3"}
+    ],
+    image: "/assets/work/sheet.png",
+    live: "https://balance-sheet-beige.vercel.app/",
+    github: "https://github.com/ljcdev421/balance-sheet",
   },
 ];
 
@@ -90,9 +102,14 @@ const Work = () => {
                   {project.num}
                 </div>
                 {/* project category */}
+                <h2 className="text-[20px] font-medium leading-none text-white
+                   group-hover:text-accent transition-all duration-500 capitalize"> 
+                   Projet {project.category} 
+                </h2>
+                {/* project title */}
                 <h2 className="text-[42px] font-bold leading-none text-white
                    group-hover:text-accent transition-all duration-500 capitalize"> 
-                   {project.category} project 
+                    {project.title} 
                 </h2>
                 {/* project description */}
                 <p className="text-white/60">
@@ -158,7 +175,7 @@ const Work = () => {
                       </div>
                       {/* image */}
                       <div className="relative w-full h-full">
-                        {/* <Image src={}  fill className="object-cover"/> */}
+                        <Image src={project.image} alt='' fill className="object-cover"/>
                       </div>
                     </div>
                   </SwiperSlide>
