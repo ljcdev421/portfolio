@@ -15,6 +15,18 @@ const projects = [
   {
     num: "01",
     category: "frontend",
+    title: "E-tutor",
+    description: "Un exemplaire de landing page.",
+    stack:[
+      {name: "ReactJs"}, {name: "Tailwind Css"}, {name: "Framer-motion"}
+    ],
+    image: "/assets/work/tutor.png",
+    live: "https://e-tutor-three.vercel.app/",
+    github: "https://github.com/ljcdev421/e-tutor",
+  },
+  {
+    num: "02",
+    category: "frontend",
     title: "Web Cat",
     description: "Une page web illustrant un chat, juste pour travailler le CSS.",
     stack:[
@@ -25,7 +37,7 @@ const projects = [
     github: "https://github.com/ljcdev421/web-cat",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend",
     title: "Web Penguin",
     description: "Une page web illustrant un pingouin qui fait un coucou.",
@@ -37,7 +49,7 @@ const projects = [
     github: "https://github.com/ljcdev421/web-penguin",
   },
   {
-    num: "03",
+    num: "04",
     category: "frontend",
     title: "Web Piano",
     description: "Une page web illustrant un piano, pour travailler les notions de style.",
@@ -49,7 +61,7 @@ const projects = [
     github: "https://github.com/ljcdev421/web-piano",
   },
   {
-    num: "04",
+    num: "05",
     category: "frontend",
     title: "City Skyline",
     description: "Une ville en journée et en nuit, sous l'éclat du soleil et celui de la lune.",
@@ -61,7 +73,7 @@ const projects = [
     github: "https://github.com/ljcdev421/city-skyline",
   },
   {
-    num: "05",
+    num: "06",
     category: "frontend",
     title: "Balance sheet",
     description: "Une page web présentant un bilan d'actifs et de responsabilités.",
@@ -71,6 +83,18 @@ const projects = [
     image: "/assets/work/sheet.png",
     live: "https://balance-sheet-beige.vercel.app/",
     github: "https://github.com/ljcdev421/balance-sheet",
+  },
+  {
+    num: "07",
+    category: "frontend",
+    title: "Calculator",
+    description: "Une petite calculatrice, doublée d'un générateur de bulles. Un clique sur une bulle la fait disparaître et incrémente un compteur initialement à 0.",
+    stack:[
+      {name: "html 5"}, {name: "css 3"}, {name: "javascript"}
+    ],
+    image: "/assets/work/calculator.png",
+    live: "https://calculator-bay-omega-83.vercel.app/",
+    github: "https://github.com/ljcdev421/calculator",
   },
 ];
 
